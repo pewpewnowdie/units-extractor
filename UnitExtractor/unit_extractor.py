@@ -29,7 +29,6 @@ class UnitExtractor:
             value, unit = matches[i]
             unit = unit.lower().strip()
 
-            # Handle compound units like m/s
             if '/' in unit:
                 unit = self.spell_matching(unit)
                 try:
