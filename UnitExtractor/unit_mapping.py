@@ -1,4 +1,4 @@
-unit_map = {
+unit_mapping = {
     # Length
     'meter': 'm', 'meters': 'm', 'metre': 'm', 'metres': 'm', 'm': 'm',
     'centimeter': 'cm', 'centimeters': 'cm', 'centimetre': 'cm', 'centimetres': 'cm', 'cm': 'cm',
