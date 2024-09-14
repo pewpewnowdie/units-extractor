@@ -1,4 +1,6 @@
 import re
+from unit_mapping import unit_map
+from fuzzywuzzy import process
 
 class UnitExtractor:
     def __init__(self):
@@ -14,8 +16,8 @@ class UnitExtractor:
         i = 0
         while i < len(matches):
             value, unit = matches[i]
-            unit = unit.lower()  
-            
+            unit = unit.lower()
+
             if unit in ["'", '"', "`", "\u2019", "\u201C", "\u201D"]:
                 if i > 0 and (matches[i-1][1] in ["'", '"', "`", "\u2019", "\u201C", "\u201D"]):
                     previous_value, previous_unit = matches[i-1]
@@ -25,16 +27,26 @@ class UnitExtractor:
                             feet = float(previous_value) if previous_value else 0
                             inches = float(value) if value else 0
                             total_inches = (feet * 12) + inches
-                            processed_matches[-1] = (str(total_inches), 'inches')
+                            processed_matches[-1] = (str(total_inches), 'in')
                         except ValueError:
-                            processed_matches.append((value, unit))
+                            try:
+                                processed_matches.append((value, unit_map[unit]))
+                            except KeyError:
+                                processed_matches.append((value, unit))
                 else:
                     if unit in ["'", '"', "`", "\u2019", "\u201C", "\u201D"]:
-                        processed_matches.append((value, 'feet' if unit in ["'", "`"] else 'inches'))
+                            processed_matches.append((value, 'ft' if unit in ["'", "`"] else 'in'))
+                        
                     else:
-                        processed_matches.append((value, unit))
+                        try:
+                            processed_matches.append((value, unit_map[unit]))
+                        except KeyError:
+                            processed_matches.append((value, unit))
             else:
-                processed_matches.append((value, unit))
+                try:
+                    processed_matches.append((value, unit_map[unit]))
+                except:
+                    processed_matches.append((value, unit))
                 
             i += 1
         return processed_matches
