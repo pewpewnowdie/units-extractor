@@ -96,66 +96,51 @@ unit_mapping = {
     'kilohertz': 'kHz', 'kilohertz': 'kHz', 'khz': 'kHz',
     'megahertz': 'MHz', 'megahertz': 'MHz', 'mhz': 'MHz',
     'gigahertz': 'GHz', 'gigahertz': 'GHz', 'ghz': 'GHz',
-    'terahertz': 'THz', 'terahertz': 'THz', 'THz': 'THz',
+    'terahertz': 'THz', 'terahertz': 'THz', 'thz': 'THz',
 
-    # Electric Current
-    'ampere': 'A', 'amperes': 'A', 'amps': 'A', 'A': 'A',
-    'milliampere': 'mA', 'milliamperes': 'mA', 'mA': 'mA',
+    # Density
+    'kilogram per cubic meter': 'kg/m3', 'kilograms per cubic meter': 'kg/m3', 'kg/m3': 'kg/m3',
+    'gram per cubic centimeter': 'g/cm3', 'grams per cubic centimeter': 'g/cm3', 'g/cm3': 'g/cm3',
+    'pound per cubic foot': 'lb/ft3', 'pounds per cubic foot': 'lb/ft3', 'lb/ft3': 'lb/ft3',
 
-    # Voltage
-    'volt': 'V', 'volts': 'V', 'V': 'V',
-    'millivolt': 'mV', 'millivolts': 'mV', 'mV': 'mV',
+    # Speed
+    'meters per second': 'm/s', 'meter per second': 'm/s', 'm/s': 'm/s',
+    'kilometers per hour': 'km/h', 'kilometer per hour': 'km/h', 'km/h': 'km/h',
+    'miles per hour': 'mph', 'mile per hour': 'mph', 'mph': 'mph',
 
-    # Resistance
-    'ohm': 'Ω', 'ohms': 'Ω', 'Ω': 'Ω',
-    'milliohm': 'mΩ', 'milliohms': 'mΩ', 'mΩ': 'mΩ',
-
-    # Capacitance
-    'farad': 'F', 'farads': 'F', 'F': 'F',
-    'microfarad': 'μF', 'microfarads': 'μF', 'μF': 'μF',
-    'nanofarad': 'nF', 'nanofarads': 'nF', 'nF': 'nF',
-    'picofarad': 'pF', 'picofarads': 'pF', 'pF': 'pF',
-
-    # Inductance
-    'henry': 'H', 'henries': 'H', 'H': 'H',
-    'millihenry': 'mH', 'millihenries': 'mH', 'mH': 'mH',
-    'microhenry': 'μH', 'microhenries': 'μH', 'μH': 'μH',
-
-    # Luminous Intensity
-    'candela': 'cd', 'candelas': 'cd', 'cd': 'cd',
-
-    # Illuminance
-    'lux': 'lx', 'luxes': 'lx', 'lx': 'lx',
-
-    # Radioactivity
-    'becquerel': 'Bq', 'becquerels': 'Bq', 'Bq': 'Bq',
-    'curie': 'Ci', 'curies': 'Ci', 'Ci': 'Ci',
-
-    # Magnetic Flux
-    'weber': 'Wb', 'webers': 'Wb', 'Wb': 'Wb',
-
-    # Magnetic Flux Density
-    'tesla': 'T', 'teslas': 'T', 'T': 'T',
-
-    # Absorbed Dose
-    'gray': 'Gy', 'grays': 'Gy', 'Gy': 'Gy',
-
-    # Equivalent Dose
-    'sievert': 'Sv', 'sieverts': 'Sv', 'Sv': 'Sv',
+    # Fuel Efficiency
+    'kilometers per liter': 'km/l', 'kilometer per liter': 'km/l', 'km/l': 'km/l',
+    'miles per gallon': 'mpg', 'mile per gallon': 'mpg', 'mpg': 'mpg',
+    'liters per 100 kilometers': 'L/100km', 'litres per 100 kilometers': 'L/100km', 'L/100km': 'L/100km',
 
     # Power Density
     'watt per square meter': 'W/m2', 'watts per square meter': 'W/m2', 'W/m2': 'W/m2',
+    'watt per cubic meter': 'W/m3', 'watts per cubic meter': 'W/m3', 'W/m3': 'W/m3',
 
-    # Other
-    'atomic mass unit': 'amu', 'atomic mass units': 'amu', 'amu': 'amu',
-    'dalton': 'Da', 'daltons': 'Da', 'Da': 'Da',
-    'ton': 'tn', 'tons': 'tn', 'tn': 'tn',
-    'pica': 'pc', 'picas': 'pc', 'pc': 'pc',
-    'troy ounce': 'oz t', 'troy ounces': 'oz t', 'oz t': 'oz t',
-    'carat (mass)': 'ct', 'carats (mass)': 'ct', 'ct': 'ct',
-    'rope': 'rope', 'ropes': 'rope', 'rope': 'rope',
-    'board foot': 'bf', 'board feet': 'bf', 'bf': 'bf',
-    'rem': 'rem', 'rems': 'rem', 'rem': 'rem',
-    'sievert': 'Sv', 'sieverts': 'Sv', 'Sv': 'Sv',
-    'gray': 'Gy', 'grays': 'Gy', 'Gy': 'Gy',
+    # Pressure
+    'newton per square meter': 'N/m2', 'newtons per square meter': 'N/m2', 'N/m2': 'N/m2',
+    'pounds per square inch': 'psi', 'pound per square inch': 'psi', 'psi': 'psi',
+
+    # Specific Energy
+    'joules per kilogram': 'J/kg', 'joule per kilogram': 'J/kg', 'J/kg': 'J/kg',
+
+    # Current Density
+    'ampere per square meter': 'A/m2', 'amperes per square meter': 'A/m2', 'A/m2': 'A/m2',
+
+    # Linear Mass Density
+    'kilogram per meter': 'kg/m', 'kilograms per meter': 'kg/m', 'kg/m': 'kg/m',
+
+    # Luminous Flux per Area (Illuminance)
+    'lumen per square meter': 'lm/m2', 'lumens per square meter': 'lm/m2', 'lm/m2': 'lm/m2',
+    
+    # Flow Rate
+    'cubic meter per second': 'm3/s', 'cubic meters per second': 'm3/s', 'm3/s': 'm3/s',
+    'liter per second': 'L/s', 'liters per second': 'L/s', 'L/s': 'L/s',
+    'liter per minute': 'L/min', 'liters per minute': 'L/min', 'L/min': 'L/min',
+
+    # Heat Flux
+    'watt per square meter kelvin': 'W/(m2·K)', 'watts per square meter kelvin': 'W/(m2·K)', 'W/(m2·K)': 'W/(m2·K)',
+
+    # Heat Transfer Coefficient
+    'watt per square meter kelvin': 'W/m2K', 'watts per square meter kelvin': 'W/m2K', 'W/m2K': 'W/m2K',
 }
