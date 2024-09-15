@@ -4,7 +4,6 @@ from fuzzywuzzy import process
 
 class UnitExtractor:
     def __init__(self):
-        # Updated regex to capture units like m/s, ft/s without ^.
         self.pattern = r'(\d+[\.,]?\d*)\s*([\'\"\u2019\u201C\u201D`]+|[\w/]+)'
         self.unit_map = unit_mapping
         self.unit_names = list(unit_mapping.keys())
@@ -44,7 +43,7 @@ class UnitExtractor:
                             feet = float(previous_value) if previous_value else 0
                             inches = float(value) if value else 0
                             total_inches = (feet * 12) + inches
-                            processed_matches[-1] = (str(total_inches), 'in')
+                            processed_matches[-1] = (str(total_inches), 'inch')
                         except ValueError:
                             try:
                                 processed_matches.append((value, self.unit_map[unit]))
@@ -52,7 +51,7 @@ class UnitExtractor:
                                 processed_matches.append((value, unit))
                 else:
                     if unit in ["'", '"', "`", "\u2019", "\u201C", "\u201D"]:
-                            processed_matches.append((value, 'ft' if unit in ["'", "`"] else 'in'))
+                            processed_matches.append((value, 'foot' if unit in ["'", "`"] else 'inch'))
                     else:
                         try:
                             processed_matches.append((value, self.unit_map[unit]))
