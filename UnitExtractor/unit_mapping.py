@@ -3,7 +3,7 @@ unit_mapping = {
     'meter': 'metre', 'meters': 'metre', 'metre': 'metre', 'metres': 'metre', 'm': 'metre',
     'centimeter': 'centimetre', 'centimeters': 'centimetre', 'centimetre': 'centimetre', 'centimetres': 'centimetre', 'cm': 'centimetre',
     'millimeter': 'millimetre', 'millimeters': 'millimetre', 'millimetre': 'millimetre', 'millimetres': 'millimetre', 'mm': 'millimetre',
-    'kilometer': 'km', 'kilometers': 'km', 'kilometre': 'km', 'kilometres': 'km', 'km': 'km',
+    'kilometer': 'kilometre', 'kilometers': 'kilometre', 'kilometre': 'kilometre', 'kilometres': 'kilometre', 'km': 'kilometre',
     'foot': 'foot', 'feet': 'foot', 'ft': 'foot',
     'inch': 'inch', 'inches': 'inch', 'in': 'inch',
     'yard': 'yard', 'yards': 'yard', 'yd': 'yard',
