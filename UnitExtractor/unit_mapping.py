@@ -1,12 +1,12 @@
 unit_mapping = {
     # Length
-    'meter': 'm', 'meters': 'm', 'metre': 'm', 'metres': 'm', 'm': 'm',
-    'centimeter': 'cm', 'centimeters': 'cm', 'centimetre': 'cm', 'centimetres': 'cm', 'cm': 'cm',
-    'millimeter': 'mm', 'millimeters': 'mm', 'millimetre': 'mm', 'millimetres': 'mm', 'mm': 'mm',
+    'meter': 'metre', 'meters': 'metre', 'metre': 'metre', 'metres': 'metre', 'm': 'metre',
+    'centimeter': 'centimetre', 'centimeters': 'centimetre', 'centimetre': 'centimetre', 'centimetres': 'centimetre', 'cm': 'centimetre',
+    'millimeter': 'millimetre', 'millimeters': 'millimetre', 'millimetre': 'millimetre', 'millimetres': 'millimetre', 'mm': 'millimetre',
     'kilometer': 'km', 'kilometers': 'km', 'kilometre': 'km', 'kilometres': 'km', 'km': 'km',
-    'foot': 'ft', 'feet': 'ft', 'ft': 'ft',
-    'inch': 'in', 'inches': 'in', 'in': 'in',
-    'yard': 'yd', 'yards': 'yd', 'yd': 'yd',
+    'foot': 'foot', 'feet': 'foot', 'ft': 'foot',
+    'inch': 'inch', 'inches': 'inch', 'in': 'inch',
+    'yard': 'yard', 'yards': 'yard', 'yd': 'yard',
     'mile': 'mi', 'miles': 'mi', 'mi': 'mi',
     'nautical mile': 'nmi', 'nautical miles': 'nmi', 'nmi': 'nmi',
     'angstrom': 'Å', 'angstroms': 'Å', 'Å': 'Å',
@@ -23,25 +23,32 @@ unit_mapping = {
     'are': 'a', 'ares': 'a', 'a': 'a',
 
     # Volume
-    'liter': 'L', 'liters': 'L', 'litre': 'L', 'litres': 'L', 'l': 'L',
-    'milliliter': 'mL', 'milliliters': 'mL', 'millilitre': 'mL', 'millilitres': 'mL', 'ml': 'mL',
+    'liter': 'litre', 'liters': 'litre', 'litre': 'litre', 'litres': 'litre', 'l': 'litre',
+    'microliter': 'microlitre', 'microliters': 'microlitre', 'µL': 'microlitre', 'microlitre': 'microlitre', 'microlitres': 'microlitre',
+    'milliliter': 'millilitre', 'milliliters': 'millilitre', 'millilitre': 'millilitre', 'millilitres': 'millilitre', 'ml': 'millilitre', 'mL': 'millilitre',
     'cubic meter': 'm3', 'cubic meters': 'm3', 'cubic metre': 'm3', 'cubic metres': 'm3', 'm3': 'm3',
     'cubic centimeter': 'cm3', 'cubic centimeters': 'cm3', 'cubic centimetre': 'cm3', 'cubic centimetres': 'cm3', 'cm3': 'cm3',
-    'cubic inch': 'in3', 'cubic inches': 'in3', 'in3': 'in3',
-    'cubic foot': 'ft3', 'cubic feet': 'ft3', 'ft3': 'ft3',
-    'gallon': 'gal', 'gallons': 'gal', 'gal': 'gal',
-    'quart': 'qt', 'quarts': 'qt', 'qt': 'qt',
+    'cubic inch': 'cubic inch', 'cubic inches': 'cubic inch', 'in3': 'cubic inch',
+    'cubic foot': 'cubic foot', 'cubic feet': 'cubic foot', 'ft3': 'cubic foot',
+    'gallon': 'gallon', 'gallons': 'gallon', 'gallon': 'gallon', 'gals': 'gallon', 'gall': 'gallon', 'galls': 'gallon',
+    'imperial gallon': 'imperial gallon', 'imperial gallons': 'imperial gallon', 'imp gal': 'imperial gallon',
+    'quart': 'pint', 'quarts': 'pint', 'qt': 'pint', 'pts': 'pint',
     'pint': 'pt', 'pints': 'pt', 'pt': 'pt',
-    'fluid ounce': 'fl oz', 'fluid ounces': 'fl oz', 'fl oz': 'fl oz',
+    'fluid ounce': 'fluid ounce', 'fluid ounces': 'fluid ounce', 'fl oz': 'fluid ounce', 'f1 oz': 'fluid ounce', 
     'liter per minute': 'L/min', 'litre per minute': 'L/min', 'L/min': 'L/min',
+    'centilitre': 'centilitre', 'centilitres': 'centilitre', 'cL': 'centilitre', 'cl': 'centilitre',
+    'cup': 'cup',
+    'deciliter': 'decilitre', 'deciliters': 'decilitre', 'dL': 'decilitre',
+    'pint': 'pint', 'pints': 'pint', 'pt': 'pint',
 
     # Mass
-    'kilogram': 'kg', 'kilograms': 'kg', 'kg': 'kg',
-    'gram': 'g', 'grams': 'g', 'g': 'g',
-    'milligram': 'mg', 'milligrams': 'mg', 'mg': 'mg',
-    'tonne': 't', 'tonnes': 't', 'metric ton': 't', 'metric tons': 't', 't': 't',
-    'pound': 'lb', 'pounds': 'lb', 'lb': 'lb',
-    'ounce': 'oz', 'ounces': 'oz', 'oz': 'oz',
+    'kilogram': 'kilogram', 'kilograms': 'kilogram', 'kilogram': 'kilogram',
+    'gram': 'gram', 'grams': 'gram', 'gram': 'gram',
+    'milligram': 'milligram', 'milligrams': 'milligram', 'mg': 'milligram',
+    'microgram': 'microgram', 'micrograms': 'microgram', 'µg': 'microgram',
+    'tonne': 'ton', 'tonnes': 'ton', 'metric ton': 'ton', 'metric tons': 'ton', 't': 'ton', 'ton' : 'ton', 'tons' : 'ton',
+    'pound': 'pound', 'pounds': 'pound', 'lb': 'pound',
+    'ounce': 'ounce', 'ounces': 'ounce', 'ounce': 'ounce',
     'stone': 'st', 'stones': 'st', 'st': 'st',
     'carat': 'ct', 'carats': 'ct', 'ct': 'ct',
     'slug': 'slug', 'slugs': 'slug', 'slug': 'slug',
@@ -74,8 +81,8 @@ unit_mapping = {
     'therm': 'therm', 'therms': 'therm', 'therm': 'therm',
 
     # Power
-    'watt': 'W', 'watts': 'W', 'w': 'W',
-    'kilowatt': 'kW', 'kilowatts': 'kW', 'kW': 'kW',
+    'watt': 'watt', 'watts': 'watt', 'w': 'watt', 'w': 'watt',
+    'kilowatt': 'kilowatt', 'kilowatts': 'kilowatt', 'kW': 'kilowatt', 'KW': 'kilowatt', 'kw': 'kilowatt',
     'megawatt': 'MW', 'megawatts': 'MW', 'MW': 'MW',
     'gigawatt': 'GW', 'gigawatts': 'GW', 'GW': 'GW',
     'terawatt': 'TW', 'terawatts': 'TW', 'TW': 'TW',
@@ -143,4 +150,14 @@ unit_mapping = {
 
     # Heat Transfer Coefficient
     'watt per square meter kelvin': 'W/m2K', 'watts per square meter kelvin': 'W/m2K', 'W/m2K': 'W/m2K',
+
+    # Voltage
+    'volt': 'volt', 'volts': 'volt', 'V': 'volt',
+    'millivolt': 'millivolt', 'millivolts': 'millivolt', 'mV': 'millivolt', 'mv': 'millivolt',
+    'kilovolt': 'kilovolt', 'kilovolts': 'kilovolt', 'kV': 'kilovolt', 'kv': 'kilovolt', 'KV': 'kilovolt',
+
+    # Current
+    'ampere': 'A', 'amperes': 'A', 'A': 'A',
+    'milliampere': 'mA', 'milliamperes': 'mA', 'mA': 'mA',
+    'microampere': 'µA', 'microamperes': 'µA', 'µA': 'µA',
 }
